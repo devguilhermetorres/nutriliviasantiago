@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", system-ui, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,8 +17,47 @@ body {
     justify-content: center;
 }
 
+.btn {
+    transform: translate(0%, 200%);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-whatsapp {
+    right: 25px;
+    bottom: 25px;
+    position: fixed;
+    background-color: #77a3be;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 45px;
+    height: 45px;
+    transition: background-color 0.15s, opacity 0.2s, visibility 0.2s, transform 0.2s;
+    box-shadow: 0px 0px 15px rgba(0, 106, 138, 0.1);
+    width: auto;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    cursor: pointer;
+    background-color: #739db8;
+}
+
 a {
-    color: transparent;
+    color: white;
+    text-decoration: none;
 }
 
 .info {
@@ -21,7 +65,7 @@ a {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 5px;
+    padding: 6px;
 }
 
 .info p {
@@ -44,7 +88,7 @@ a {
     padding: 10px;
     width: 85%;
     max-width: 1300px;
-    height: 75px;
+    height: 70px;
 }
 
 .logos {
@@ -57,15 +101,17 @@ a {
     font-size: 20px;
     font-weight: bold;
     width: 85px;
-    height: 75px;
+    height: 70px;
     background-image: url(imgs/l1.png);
     background-size: 85px;
     background-repeat: no-repeat;
-    background-position: 50% 65%;
+    background-position: 50% 75%;
 }
 
 .logo-livia {
     margin-left: -10px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-links {
@@ -76,17 +122,27 @@ a {
 
 .nav-links li {
     margin: 0 15px;
+    display: flex;
+    justify-content: center;
 }
 
-.fa-instagram {
-    font-size: 25px;
+.fa-instagram, .fa-whatsapp{
+    font-size: 20px;
 }
 
 .nav-links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.15s;
 }
+
+.nav-links a:hover {
+    color: #ffe8f1;
+    cursor: pointer;
+}
+
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -126,7 +182,7 @@ main {
 
 .home {
     width: 100%;
-    height: 850px;
+    height: 800px;
     background: linear-gradient(to top, rgb(243, 250, 255), #ffffff);
     display: flex;
     justify-content: space-between;
@@ -171,42 +227,64 @@ main {
     background-image: url(imgs/IMG_5040.jpg);
     background-size: cover;
     background-position: 50% 40%;
+    transition: all 0.2s;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .button-1 {
-    background-color: #e5b9ca;
+    background-color: #e0abc0;
     color: rgb(255, 255, 255);
     height: 50px;
-    width: 45%;
+    width: 40%;
     border: none;
     border-radius: 25px;
     font-size: 16px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.15s;
+}
+
+.button-1:hover {
+    cursor: pointer;
+    background-color: #d89db4;
 }
 
 .button-2 {
     background-color: transparent;
-    border: 1.5px solid #e5b9ca;
-    color: #e5b9ca;
+    border: 1px solid #e0abc0;
+    color: #e0abc0;
+    width: 35%;
     height: 50px;
-    width: 45%;
     border-radius: 25px;
     font-size: 16px;
     font-weight: 600;
-    margin-left: 15px;
+}
+
+.button-2:hover {
+    border: 2px solid #d89db4;
+    color: #d89db4;
+    cursor: pointer;
 }
 
 .presentation {
     width: 80%;
     max-width: 1150px;
-    height: 1000px;
+    min-height: 1000px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .presentation-text {
-    height: auto;
     min-height: 700px;
     width: 50%;
     margin: 35px;
@@ -228,7 +306,7 @@ main {
 }
 
 .presentation-text p {
-    font-size: 20px;
+    font-size: clamp(10px, 1.5vw, 22px);
     margin-bottom: 15px;
     font-weight: 500;
 }
@@ -241,6 +319,11 @@ main {
     padding: 6%;
     align-items: center;
     height: auto;
+    transition: all 0.2s
+}
+
+.presentation-text-extra:hover {
+    transform: translate(0%, -.7%);
 }
 
 .presentation-text-extra p{
@@ -251,7 +334,8 @@ main {
 }
 
 .presentation-photo {
-    height: 700px;
+    min-height: 700px;
+    flex-grow: 1;
     width: 50%;
     margin: 35px;
     margin-left: 0;
@@ -259,6 +343,11 @@ main {
     background-size: 600px;
     background-position: 50% 70%;
     border-radius: 40px;
+    transition: all 0.2s;
+}
+
+.presentation-photo:hover {
+    transform: translate(0%, -.5%);
 }
 
 .benefits {
@@ -270,7 +359,7 @@ main {
     align-items: center;
     background-image: url(imgs/lbackground.png);
     background-size: 850px;
-    background-position: -20% 50%;
+    background-position: -19.5% 50%;
     background-repeat: no-repeat;
 }
 
@@ -278,7 +367,7 @@ main {
 .benefits-title {
     width: 80%;
     max-width: 1150px;
-    margin-top: 100px;
+    margin-top: 95px;
 }
 
 .benefits-title h1 {
@@ -307,6 +396,11 @@ main {
     height: auto;
     border-radius: 20px;
     color: white;
+    transition: background-color 0.15s;
+}
+
+.box:hover {
+    background-color: #cf96ac;
 }
 
 .box h2 {
@@ -326,7 +420,7 @@ main {
 .service-title {
     width: 80%;
     max-width: 1150px;
-    margin-top: 100px;
+    margin-top: 95px;
     
 }
 
@@ -356,7 +450,11 @@ main {
     height: auto;
     border-radius: 20px;
     color: white;
+    transition: background-color 0.15s;
+}
 
+.box-2:hover {
+    background-color: #739db8;
 }
 
 .box-2-title {
@@ -390,7 +488,7 @@ main {
 
 .contact {
     width: 100%;
-    height: 850px;
+    height: 870px;
     background: white;
     display: flex;
     justify-content: center;
@@ -470,13 +568,14 @@ main {
 }
 
 .actions p {
-    font-size: 15.5px;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .actions i {
-    font-size: 17px;
+    font-size: 18px;
     color: #ffdbe9;
+    margin-right: 20px;
 }
 
 #instagramcontato {
@@ -487,7 +586,7 @@ main {
     background-image: url(imgs/chevron-right-svgrepo-com\ \(1\).svg);
     background-position: 95% 50%;
     transform: translate(0.6%, 0%);
-    background-color: #8cb9d4;
+    background-color: #83b1ce;
 
 }
 
@@ -523,7 +622,7 @@ footer {
 }
 
 #footer_logo p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 13px;
 }
 
@@ -537,43 +636,6 @@ footer {
     padding: 10px;
     border-radius: 10px;
     transition: all 0.3s;
-}
-
-#footer_social_media i:hover {
-    background-color: #c6c6c65e;
-}
-
-i.fa-brands.fa-facebook-f:hover {
-    color: rgb(0, 68, 177);
-    transition: all 0.2s;
-}
-
-i.fa-brands.fa-youtube:hover {
-    color: red;
-    transition: all 0.2s;
-}
-
-i.fa-brands.fa-whatsapp:hover{
-    color: rgb(0, 193, 48);
-    transition: all 0.2s;
-}
-
-@media screen and (max-width: 1000px) {
-    #footer_social_media i:hover {
-        background-color: transparent
-    }
-
-    i.fa-brands.fa-facebook-f:hover {
-        color: unset;
-    }
-    
-    i.fa-brands.fa-youtube:hover {
-        color: unset;
-    }
-    
-    i.fa-brands.fa-whatsapp:hover {
-        color: unset;
-    }
 }
 
 #footer_social_media .footer-link {
@@ -601,6 +663,10 @@ i.fa-brands.fa-whatsapp:hover{
     margin-top: 0;
 }
 
+.footer-link {
+    transition: all 0.3s;
+}
+
 .footer-list h3 {
     font-size: 18px;
     font-weight: 600;
@@ -622,37 +688,8 @@ i.fa-brands.fa-whatsapp:hover{
 }
 
 .footer-list .footer-link:hover {
-    opacity: 0.7;
-    transition: all 0.3s;
-}
-
-#input_group {
-    display: flex;
-    align-items: center;
-}
-
-#input_group input {
-    margin-top: 0px;
-    background-color: transparent;
-    margin-left: 0px;
-    height: 32px;
-    width: 50%;
-    border: solid 1px #969696;
-    border-radius: 7px;
-    font-weight: 600;
-    font-size: 13px;
-    padding-left: 10px;
-}
-
-#input_group input:focus {
-    border-color: #000000; /* Cor da borda ao clicar */
-    outline: none; /* Remove a borda padrão de foco do navegador */
-}
-
-#input_group input::placeholder {
-    color: #969696;
-    font-size: 13px;
-    font-weight: 400;
+    color: #ffe8f1;
+    cursor: pointer;
 }
 
 #footer_copyright {
@@ -662,7 +699,7 @@ i.fa-brands.fa-whatsapp:hover{
     width: 100%;
     justify-content: center;
     font-size: 0.75rem;
-    padding: .5rem;
+    padding: 15.5px;
     font-weight: 400;
 }
 
