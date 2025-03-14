@@ -28,4 +28,29 @@ window.onscroll = function() {
         fixedButtonWhatsApp.style.visibility = "hidden";
         fixedButtonWhatsApp.style.transform = "translate(0%, 200%)"
     } 
+
+    const fixedButtonTop = document.getElementById("fixedButtonTop");
+    if (window.scrollY > 300) {
+        fixedButtonTop.style.opacity = "1";
+        fixedButtonTop.style.visibility = "visible";
+        fixedButtonTop.style.transform = "translate(0%, 0%)";
+    } else {
+        fixedButtonTop.style.opacity = "0";
+        fixedButtonTop.style.visibility = "hidden";
+        fixedButtonTop.style.transform = "translate(0%, 200%)"
+    } 
 };
+
+function toggleMenu() {
+    let menu = document.querySelector(".nav-links");
+    let toggle = document.querySelector(".menu-toggle");
+
+    menu.classList.toggle("active");
+
+    // Troca o ícone de hambúrguer para "X"
+    if (menu.classList.contains("active")) {
+        toggle.innerHTML = "&#10006;"; // ✖
+    } else {
+        toggle.innerHTML = "&#9776;"; // ☰
+    }
+}

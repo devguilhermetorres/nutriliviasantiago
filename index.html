@@ -15,26 +15,52 @@
         </div>
     </a>
 
+    <a onclick="scrollToTop()">
+        <div class="btn btn-top" id="fixedButtonTop">
+        <img src="imgs/chevron.svg" alt="">
+        </div>
+    </a>
+    
+
     <div class="info">
         <p>Atendimentos à distância para o mundo todo ou presenciais em João Pessoa-PB e Goiana-PE. Vamos marcar uma consulta?</p>
     </div>
+
+    <div class="info-mobile">
+        <p>Atendimentos online ou presenciais em João Pessoa-PB e Goiana-PE.</p>
+    </div>
+
+
     <div class="nav-background">
         <nav class="navbar">
             <div class="logos">
                 <div class="logo-l"></div>
-                <div class="logo-livia"><img src="imgs/logomodelo2.svg" alt="" style="width: 185px; color: red;"></div>
+                
+                <div class="logo-official">
+                    <img src="imgs/logomodelo2.svg" alt="">
+                </div>
             </div>
             
-            <div class="menu-toggle">&#9776;</div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
             <ul class="nav-links">
-                <!-- <li><a href="#home">Home</a></li> -->
-                <li><a onclick="scrollToDiv(0)">Quem Sou</a></li>
-                <li><a onclick="scrollToDiv(1)">Benefícios</a></li>
-                <li><a onclick="scrollToDiv(2)">Acompanhamento</a></li>
-                <li><a onclick="scrollToDiv(3)">Contato</a></li>
-                <li><a href="https://www.instagram.com/nutriliviasantiago/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a onclick="scrollToDiv(0)"><p>Quem Sou</p></a></li>
+
+                <li><a onclick="scrollToDiv(1)"><p>Benefícios</p></a></li>
+
+                <li><a onclick="scrollToDiv(2)"><p>Acompanhamento</p></a></li>
+
+                <li><a onclick="scrollToDiv(3)"><p>Contatos</p></a></li>
+
+                <li class="li-desktop"><a href="https://www.instagram.com/nutriliviasantiago/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+
+                <li class="li-desktop" ><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+
+                <li class="li-mobile"><a href="https://www.instagram.com/nutriliviasantiago/"><p>Instagram</p></a></li>
+
+                <li class="li-mobile"><a href="https://web.whatsapp.com/"><p>Whatsapp</p></a></li>
+
             </ul>
+            
         </nav> 
     </div>
     
@@ -46,8 +72,8 @@
                 <p> Acompanho gestantes, bebês e crianças na construção de hábitos equilibrados, promovendo saúde e bem-estar. Agende sua consulta!
                 </p>
                 <div class="buttons">
-                    <button class="button-1" onclick="openWhatsApp()">Agendar consulta</button>
-                    <button class="button-2" onclick="scrollToDiv(2)">Como funciona?</button>
+                    <button class="btn-schedule" onclick="openWhatsApp()">Agendar consulta</button>
+                    <button class="btn-attendance" onclick="scrollToDiv(2)">Como funciona?</button>
                 </div>
             </div>
             
@@ -114,12 +140,12 @@
         </div>
     </div>
 
-        <div class="service target" id="service">
-            <div class="service-title">
+        <div class="attendance target">
+            <div class="attendance-title">
                 <h1>Como funciona o acompanhamento?</h1>
             </div>
 
-            <div class="service-texts">
+            <div class="attendance-texts">
                 <div class="box-2">
                     <div class="box-2-title">
                         <img src="imgs/comida-saudavel.png" alt="" style="max-width: 78px; max-height: 78px;">
@@ -232,7 +258,7 @@
                 </li>
 
                 <li>
-                    <a  class="footer-link" onclick="scrollToTop()"">Home</a>
+                    <a  class="footer-link" onclick="scrollToTop()">Home</a>
                 </li>
 
                 <li>
