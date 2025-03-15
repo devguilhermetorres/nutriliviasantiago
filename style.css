@@ -9,16 +9,17 @@
 }
 
 button:active, a:active {
-    transition: none;
-    transform: none;
-    box-shadow: none;
+    transition: none!important;
+    transform: none!important;
+    box-shadow: none!important;
 }
 
 @media (hover: none) {
-    .seletor:hover {
-        pointer-events: none!important;
-        background-color: initial;
-        transform: none;
+    a:hover, button:hover {
+        background: none !important;
+        color: inherit !important;
+        transform: none !important;
+        box-shadow: none !important;
     }
 }
 
@@ -135,7 +136,7 @@ a {
     
     .btn-whatsapp:hover {
         cursor: pointer;
-        background-color: #739db8;
+        background-color: #77a3be;
     }
     
     .btn-top {
@@ -143,7 +144,7 @@ a {
         bottom: 20px;
         position: fixed;
         background-color: #77a3be;
-        padding: auto;
+        padding-bottom: 12.5px;
         border-radius: 45px;
         height: 45px;
         width: 45px;
@@ -159,8 +160,8 @@ a {
     
     .btn-top:hover {
         cursor: pointer;
-        background-color: #739db8;
-        padding-bottom: 18px;
+        background-color: #77a3be;
+        padding-bottom: 12.5px;
     }
     
     a {
@@ -578,7 +579,7 @@ main {
     
     .btn-schedule:hover {
         cursor: pointer;
-        background-color: #d89db4;
+        background-color: #e0abc0;
     }
     
     .btn-attendance {
@@ -593,8 +594,8 @@ main {
     }
     
     .btn-attendance:hover {
-        border: 2px solid #d89db4;
-        color: #d89db4;
+        border: 1px solid #e0abc0;
+        color: #e0abc0;
         cursor: pointer;
     }
 }
@@ -861,7 +862,7 @@ main {
     }
     
     .box:hover {
-        background-color: #cf96ac;
+        background-color: #d89db4;
     }
     
     .box h2 {
@@ -979,7 +980,7 @@ main {
     }
     
     .box-2:hover {
-        background-color: #739db8;
+        background-color: #77a3be;
     }
     
     .box-2-title {

@@ -15,16 +15,16 @@ function scrollToDiv(index) {
             targets[index].scrollIntoView({ behavior: "smooth"});
 
             if(window.scrollY < 300) {
-                let menu = document.querySelector(".nav-links");
-                let toggle = document.querySelector(".menu-toggle");
-                menu.classList.toggle("active");
-    
-                if (menu.classList.contains("active")) {
-                    toggle.innerHTML = "&#10006;"; 
-                } 
-                else {
-                    toggle.innerHTML = "&#9776;";
-                }
+let menu = document.querySelector(".nav-links");
+            let toggle = document.querySelector(".menu-toggle");
+            menu.classList.toggle("active");
+
+            if (menu.classList.contains("active")) {
+                toggle.innerHTML = "&#10006;"; 
+            } 
+            else {
+                toggle.innerHTML = "&#9776;";
+            }
             }
             
 
