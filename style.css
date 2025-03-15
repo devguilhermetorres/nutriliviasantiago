@@ -281,7 +281,7 @@ a {
 
 @media (max-width: 1050px) {
     .nav-links {
-        display: none;
+        display: block;
         flex-direction: column;
         position: absolute;
         top: 80px;
@@ -289,12 +289,18 @@ a {
         background: #e0abc0;
         width: 100%;
         height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        left: 0;
+        width: 100%;
     }
 
     .nav-links.active {
         display: flex;
         justify-content: left;
         border-top: 1px solid #e9b9cc;
+        max-height: 300px;
     }
 
     .menu-toggle {

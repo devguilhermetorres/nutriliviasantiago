@@ -16,8 +16,9 @@ function scrollToDiv(index) {
             targets[index].scrollIntoView({ behavior: "smooth"});
 
             if(window.scrollY < 300) {
-let menu = document.querySelector(".nav-links");
-            let toggle = document.querySelector(".menu-toggle");
+            
+            let menu = document.querySelector(".nav-links");
+            
             menu.classList.toggle("active");
 
             if (menuIcon.src.includes("menu.png")) {
@@ -26,7 +27,6 @@ let menu = document.querySelector(".nav-links");
                 menuIcon.src = "imgs/menu.png";
             }
             }
-            
 
         }
     } 
@@ -83,7 +83,6 @@ window.onscroll = function() {
 
 function toggleMenu() {
     let menu = document.querySelector(".nav-links");
-    let toggle = document.querySelector(".menu-toggle");
 
     menu.classList.toggle("active");
 
