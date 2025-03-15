@@ -1,9 +1,50 @@
+const menuItems = document.querySelectorAll(".menu-item");
+const menu = document.getElementById("menu");
+
 function scrollToDiv(index) {
     const targets = document.getElementsByClassName("target");
-    if (targets[index]) {
-        targets[index].scrollIntoView({ behavior: "smooth", block: "center" });
+    
+    if(window.innerWidth > 1050) {
+        if (targets[index]) {
+            targets[index].scrollIntoView({ behavior: "smooth", block: "center" });
+        }
     }
+
+    else {
+        if (targets[index]) {
+            targets[index].scrollIntoView({ behavior: "smooth"});
+
+            if(window.scrollY < 300) {
+                let menu = document.querySelector(".nav-links");
+                let toggle = document.querySelector(".menu-toggle");
+                menu.classList.toggle("active");
+    
+                if (menu.classList.contains("active")) {
+                    toggle.innerHTML = "&#10006;"; 
+                } 
+                else {
+                    toggle.innerHTML = "&#9776;";
+                }
+            }
+            
+
+        }
+    } 
 }
+
+function openLink() {
+    let menu = document.querySelector(".nav-links");
+    let toggle = document.querySelector(".menu-toggle");
+    menu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+        toggle.innerHTML = "&#10006;"; 
+    } 
+    else {
+        toggle.innerHTML = "&#9776;";
+    }
+
+};
 
 function openWhatsApp() {
     const phoneNumber = "5581992290840"; 
@@ -47,10 +88,10 @@ function toggleMenu() {
 
     menu.classList.toggle("active");
 
-    // Troca o ícone de hambúrguer para "X"
     if (menu.classList.contains("active")) {
         toggle.innerHTML = "&#10006;"; // ✖
     } else {
         toggle.innerHTML = "&#9776;"; // ☰
     }
 }
+

@@ -41,23 +41,23 @@
                 </div>
             </div>
             
-            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-            <ul class="nav-links">
-                <li><a onclick="scrollToDiv(0)"><p>Quem Sou</p></a></li>
+            <div class="menu-toggle" onclick="toggleMenu()" id="menu">&#9776;</div>
+            <ul class="nav-links" >
+                <li><a onclick="scrollToDiv(0)" class="menu-item"><p>Quem Sou</p></a></li>
 
-                <li><a onclick="scrollToDiv(1)"><p>Benefícios</p></a></li>
+                <li><a onclick="scrollToDiv(1)" class="menu-item"><p>Benefícios</p></a></li>
 
-                <li><a onclick="scrollToDiv(2)"><p>Acompanhamento</p></a></li>
+                <li><a onclick="scrollToDiv(2)" class="menu-item"><p>Acompanhamento</p></a></li>
 
-                <li><a onclick="scrollToDiv(3)"><p>Contatos</p></a></li>
+                <li><a onclick="scrollToDiv(3)" class="menu-item"><p>Contatos</p></a></li>
 
                 <li class="li-desktop"><a href="https://www.instagram.com/nutriliviasantiago/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
 
                 <li class="li-desktop" ><a href="https://wa.me/5581992290840?" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
 
-                <li class="li-mobile"><a href="https://www.instagram.com/nutriliviasantiago/"><p>Instagram</p></a></li>
+                <li class="li-mobile"><a href="https://www.instagram.com/nutriliviasantiago/"  target="_blank" class="menu-item" onclick="openLink()"><p>Instagram</p></a></li>
 
-                <li class="li-mobile"><a href="https://wa.me/5581992290840?" target="_blank"><p>Whatsapp</p></a></li>
+                <li class="li-mobile"><a href="https://wa.me/5581992290840?" target="_blank" class="menu-item" onclick="openLink()"><p>Whatsapp</p></a></li>
 
             </ul>
             
