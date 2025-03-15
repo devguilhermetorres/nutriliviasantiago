@@ -302,12 +302,14 @@ a {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
         font-size: 20px;
         cursor: pointer;
         color: white;
         background: none;
         border: none;
+        justify-content: center;
+    align-items: center;
     }
     
     .nav-links li {
@@ -808,6 +810,7 @@ main {
 .box h2 {
     font-size: 30px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 @media (max-width: 1050px) {
@@ -866,7 +869,7 @@ main {
     }
     
     .box h2 {
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 5px;
     }
 }
@@ -928,9 +931,9 @@ main {
     align-items: center;
 }
 
-.box-2-text h2 {
+.box-2-title h2 {
     font-size: 22px;
-    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 @media (max-width: 1050px) {
@@ -989,11 +992,11 @@ main {
         gap: 15px;
         margin-bottom: 10px;
         align-items: center;
+        justify-content: center;
     }
     
-    .box-2-text h2 {
+    .box-2-title h2 {
         font-size: 22px;
-        margin-bottom: 10px;
     }
 }
 

@@ -1,5 +1,6 @@
 const menuItems = document.querySelectorAll(".menu-item");
 const menu = document.getElementById("menu");
+const menuIcon = document.getElementById("menu-icon");
 
 function scrollToDiv(index) {
     const targets = document.getElementsByClassName("target");
@@ -19,11 +20,10 @@ let menu = document.querySelector(".nav-links");
             let toggle = document.querySelector(".menu-toggle");
             menu.classList.toggle("active");
 
-            if (menu.classList.contains("active")) {
-                toggle.innerHTML = "&#10006;"; 
-            } 
-            else {
-                toggle.innerHTML = "&#9776;";
+            if (menuIcon.src.includes("menu.png")) {
+                menuIcon.src = "imgs/x.png"; 
+            } else {
+                menuIcon.src = "imgs/menu.png";
             }
             }
             
@@ -37,11 +37,10 @@ function openLink() {
     let toggle = document.querySelector(".menu-toggle");
     menu.classList.toggle("active");
 
-    if (menu.classList.contains("active")) {
-        toggle.innerHTML = "&#10006;"; 
-    } 
-    else {
-        toggle.innerHTML = "&#9776;";
+    if (menuIcon.src.includes("menu.png")) {
+        menuIcon.src = "imgs/x.png"; 
+    } else {
+        menuIcon.src = "imgs/menu.png";
     }
 
 };
@@ -88,10 +87,10 @@ function toggleMenu() {
 
     menu.classList.toggle("active");
 
-    if (menu.classList.contains("active")) {
-        toggle.innerHTML = "&#10006;"; // ✖
+    if (menuIcon.src.includes("menu.png")) {
+        menuIcon.src = "imgs/x.png"; 
     } else {
-        toggle.innerHTML = "&#9776;"; // ☰
+        menuIcon.src = "imgs/menu.png";
     }
 }
 
