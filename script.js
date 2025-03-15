@@ -6,8 +6,8 @@ function scrollToDiv(index) {
 }
 
 function openWhatsApp() {
-    const phoneNumber = "5511999999999"; // Substitua pelo número correto (código do país + número)
-    const message = "Olá! Gostaria de mais informações."; // Mensagem pré-definida
+    const phoneNumber = "5581992290840"; 
+    const message = "Olá! Acessei seu site e tenho interesse em agendar uma consulta."; 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
 }
