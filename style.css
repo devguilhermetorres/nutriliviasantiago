@@ -1330,6 +1330,10 @@ footer {
     font-weight: 400;
 }
 
+#torresdesign {
+    font-weight: 600;
+}
+
 @media screen and (max-width: 1000px) {
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
