@@ -8,21 +8,6 @@
     font-family: "Poppins", system-ui, sans-serif;
 }
 
-button:active, a:active {
-    transition: none!important;
-    transform: none!important;
-    box-shadow: none!important;
-}
-
-@media (hover: none) {
-    a:hover, button:hover {
-        background: none !important;
-        color: inherit !important;
-        transform: none !important;
-        box-shadow: none !important;
-    }
-}
-
 html {
     scroll-behavior: smooth;
 }
