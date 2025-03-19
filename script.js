@@ -15,7 +15,7 @@ function scrollToDiv(index) {
         if (targets[index]) {
             targets[index].scrollIntoView({ behavior: "smooth"});
 
-            if(window.scrollY < 300) {
+            if(window.scrollY < 50) {
             
             let menu = document.querySelector(".nav-links");
             

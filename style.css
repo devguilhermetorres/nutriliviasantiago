@@ -1210,10 +1210,9 @@ main {
     }
     
     .actions ul li:hover {
-        background-image: url(imgs/chevron-right-svgrepo-com\ \(1\).svg);
-        background-position: 95% 50%;
-        transform: translate(0.6%, 0%);
-        background-color: #83b1ce;
+        background-image: none;
+        transform: translate(0%, 0%);
+        background-color: #95bfda;
     
     }
 }
@@ -1346,13 +1345,6 @@ footer {
         transition: all 0.3s;
     }
 
-    .buttonsubscribeactive:hover {
-        color: #fbfbfb;
-        background-color: rgb(0, 0, 0);
-        border: solid 2px rgb(0, 0, 0);
-        transform: translate(0%, 0%);
-    }
-
     #footer_logo {
         margin: 0;
     }
@@ -1364,6 +1356,11 @@ footer {
     .footer-list {
         margin: 0;
     }
+
+    .footer-list .footer-link:hover {
+        color: #ffffff;
+    }
+    
 
     #footer_copyright {
         display: flex;
