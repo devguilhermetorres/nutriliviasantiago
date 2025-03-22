@@ -445,7 +445,7 @@ main {
 .photo {
     height: 100%;
     width: 50%;
-    background-image: url(imgs/IMG_5040.webp);
+    background-image: url(imgs/IMG_5040.jpg);
     background-size: cover;
     background-position: 50% 40%;
     transition: all 0.2s;
@@ -543,7 +543,7 @@ main {
     
     .photo {
         width: 100%;
-        background-image: url(imgs/IMG_5040.webp);
+        background-image: url(imgs/IMG_5040.jpg);
         background-size: cover;
         background-position: 50% 35%;
         transition: all 0.2s;
@@ -658,7 +658,7 @@ main {
     width: 50%;
     margin: 35px;
     margin-left: 0;
-    background-image: url(imgs/IMG_5004.webp);
+    background-image: url(imgs/IMG_5004.jpg);
     background-size: 600px;
     background-position: 50% 70%;
     border-radius: 40px;
@@ -732,7 +732,7 @@ main {
         min-height: unset;
         width: 100%;
         margin: 50px 0px 35px 0px;
-        background-image: url(imgs/IMG_5004.webp);
+        background-image: url(imgs/IMG_5004.jpg);
         background-size: cover;
         background-position: 50% 70%;
         border-radius: 40px;
@@ -1054,7 +1054,7 @@ main {
 .contact-photo {
     height: 100%;
     width: 50%;
-    background-image: url(imgs/IMG_4986.webp);
+    background-image: url(imgs/IMG_4986.jpg);
     background-size: cover;
     background-position: 50% 80%;
 }
@@ -1160,7 +1160,7 @@ main {
     .contact-photo {
         height: 35%;
         width: 100%;
-        background-image: url(imgs/IMG_4986.webp);
+        background-image: url(imgs/IMG_4986.jpg);
         background-size: cover;
         background-position: 50% 60%;
     }
