@@ -17,15 +17,16 @@ function scrollToDiv(index) {
 
             if(window.scrollY < 50) {
             
-            let menu = document.querySelector(".nav-links");
+                let menu = document.querySelector(".nav-links");
             
-            menu.classList.toggle("active");
+                menu.classList.toggle("active");
 
-            if (menuIcon.src.includes("menu.png")) {
-                menuIcon.src = "imgs/x.png"; 
-            } else {
-                menuIcon.src = "imgs/menu.png";
-            }
+                if (menuIcon.src.includes("menu.png")) {
+                    menuIcon.src = "imgs/x.png"; 
+                }  
+                else {
+                    menuIcon.src = "imgs/menu.png";
+                }
             }
 
         }
