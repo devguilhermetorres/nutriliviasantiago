@@ -396,7 +396,6 @@ main {
     background: linear-gradient(to top, rgb(243, 250, 255), #ffffff);
     display: flex;
     justify-content: space-between;
-    padding-left: 5%;
 }
 
 @media (min-width: 1600px) {
@@ -406,7 +405,6 @@ main {
         background: linear-gradient(to top, rgb(243, 250, 255), #ffffff);
         display: flex;
         justify-content: space-between;
-        padding-left: 5%;
     }
 }
 
@@ -417,9 +415,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5%;
-    padding-top: 0;
-    padding-right: 8%;
+    padding: 7%;
     background-repeat: no-repeat;
     background-size: 600px;
     background-position: 100% 100%;
